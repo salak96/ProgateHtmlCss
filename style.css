@@ -92,6 +92,8 @@ video {
 
 *{
     width: 100%;
+    margin:0px;
+    padding:0px;
 
 }
 /* HTML5 display-role reset for older browsers */
@@ -143,7 +145,7 @@ header {
     background-color: #808080;
     color: white;
     margin: 0 auto;
-    padding-left: 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
