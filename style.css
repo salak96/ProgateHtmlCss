@@ -1,87 +1,19 @@
 /* css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 //css reset
-*html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-a s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -90,6 +22,11 @@ video {
     vertical-align: baseline;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 *{
     width: 100%;
     margin:0px;
@@ -112,7 +49,7 @@ section {
 }
 section img {
     width: 25%;
-    height: 100%;
+    height: 25%;
 }
 body {
     line-height: 1;
@@ -304,9 +241,7 @@ footer {
     padding: 20px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 40px;
+    column-gap:120px;
     white-space: nowrap;
 }
 
@@ -322,6 +257,7 @@ footer h5 {
 footer ul {
     display: flex;
     flex-direction: column;
+    column-gap: 20px;
 }
 
 button {
@@ -370,7 +306,7 @@ input {
 }
 
 input[type="text"] {
-    width: 300px;
+    width: 500px;
     justify-content: center;
     align-items: center;
 }
@@ -382,7 +318,7 @@ textarea {
     margin-left: 20px font-size: 20px;
     font-weight: bold;
     letter-spacing: 0.4px;
-    width: 300px;
+    width: 500px;
     justify-content: center;
     align-items: center;
 }
@@ -466,22 +402,20 @@ h3{
   }
 @media (min-width: 768px) {
     footer {
-        padding: 20px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        column-gap: 1700px;
+        align-items: right;
+        column-gap: 1200px;
     }
 }
 @media (min-width: 992px) {
     footer {
-        padding: 20px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        column-gap: 800px;
+        align-items: right;
+        column-gap: 1200px;
     
     }
 }
@@ -495,6 +429,21 @@ h3{
         column-gap: 100px;
         font-size: 2px;
     }
+}
+@media (min-width: 992px) {
+    input[type="checkbox"] {
+        width: 10px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 602px) {
+   textarea {
+       width: 300px;
+       justify-content: center;
+       align-items: center;
+   }
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -511,19 +460,29 @@ h3{
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
   }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+ 
+  /* # Mobile */
+@media only screen and (min-width: 480px){
+    input[type="text"] {
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* 
+# Tablet */
+@media only screen and (min-width: 768px) {
+    input[type="text"] {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    input[type="text"] {
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+}
