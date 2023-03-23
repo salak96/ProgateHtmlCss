@@ -1,7 +1,7 @@
 /* css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 //css reset
-*/ html,
+*html,
 body,
 div,
 span,
@@ -185,6 +185,7 @@ h1 {
     font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    
 }
 
 h1 span {
@@ -237,48 +238,56 @@ article {
     justify-content: center;
     align-items: center;
     background-color: #d9d7d7;
-    padding: 20px;
+    padding:15px;
+    white-space:wrap;
+}
+figure img {
+    width: 50%;
+    height: 40%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 article h1 {
     color: #000000;
     justify-content: center;
     text-align: center;
+    font-family: sans-serif;
+    font-size:20px;
+    letter-spacing:1px;
+}
+article p{
+    white-space:wrap;
 }
 
-.article2 {
+.article2{
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    
 }
-
+.gambar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    column-gap: 20px;
+}
 h1 {
     font-family: sans-serif;
+    font-size: 20px;
     color: #7f8485;
-}
-
-img {
-    width: auto%;
-    height: auto%;
-}
-
-.image {
-    justify-content: center;
-    align-items: center;
-}
-
-.gambar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1px;
 }
 .gambar figcaption {
     text-align: center;
     font-size: 2px;
     font-family: sans-serif;
     color: #7f8485;
+    letter-spacing: 1px;   
 }
-
 .saya {
     display: inline-block;
     background-color: #d9d7d7;
@@ -296,16 +305,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 20px;
 }
 
 footer h5 {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     color: white;
     letter-spacing: 5px;
     white-space: nowrap;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 footer ul {
@@ -318,12 +327,14 @@ button {
     color: #0c0f07;
     border: none;
     font-weight: normal;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     width: 20%;
+    font-family: sans-serif;
+    white-space: wrap;
 }
 
 .saya {
