@@ -239,7 +239,8 @@ article {
     justify-content: center;
     align-items: center;
     background-color: #d9d7d7;
-    padding:15px;
+    margin: 0 auto;
+    padding: 0;
     white-space:wrap;
 }
 figure img {
@@ -265,17 +266,15 @@ article p{
 
 .article2{
     background-color: white;
-    padding: 15px;
-    
+    margin: 0 auto;
+    white-space:wrap;
 }
 .gambar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
-
-    column-gap: 40px;
+    column-gap: 10px;
 }
 h1 {
     font-family: sans-serif;
@@ -409,7 +408,26 @@ h3{
     color: #7f8485;
 }
 
-/* */
+/*responsive */
+@media (max-width: 1250px) {
+   header {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       column-gap: 20px;
+       font-size: 1px;
+       font-family: sans-serif;
+   }
+  }
+  @media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1px;
+        font-size: 1px;
+    }
+}
 @media (min-width: 768px) {
     footer {
         padding: 20px;
@@ -417,25 +435,60 @@ h3{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: 900px;
+        column-gap: 1700px;
     
     }
 }
-@media (min-width: 768px) {
-    header {
+@media (min-width: 992px) {
+    footer {
+        padding: 20px;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        column-gap: 20px;
-        font-size: 1px;
+        column-gap: 800px;
+    
     }
 }
+
 @media (min-width: 768px) {
     .gambar{
         display:flex;
         justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        column-gap: 2px;
-        font-size: 1px;
+        column-gap: 100px;
+        font-size: 2px;
     }
 }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
