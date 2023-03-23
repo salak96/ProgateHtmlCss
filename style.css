@@ -252,10 +252,8 @@ h1 {
 footer {
     background-color: #808080;
     color: white;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 20px ;
     display: flex;
-    white-space: nowrap;
     width: 100%;
 }
 
@@ -430,24 +428,27 @@ h3{
         column-gap: 40px;
     }
 }
-@media (min-width: 768px) {
-    footer {
-        margin: 0 auto;
-        padding: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: right;
-        column-gap: 68rem;
-    }
-}
+
 @media (min-width: 768px) {
     footer  {
         margin: 0 auto;
         padding: 0 auto;
         display: flex;
         justify-content: space-between;
+        white-space: nowrap;
         align-items: right;
-        column-gap: 1050px;
+        column-gap: 500px;
+    }
+}
+@media (min-width: 1080px) {
+    footer  {
+        margin: 0 auto;
+        padding: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        align-items: right;
+        column-gap: 1100px;
     }
 }
 
@@ -538,5 +539,24 @@ h3{
         width: 200px;
         justify-content: center;
         align-items: center;
+    }
+}
+@media only screen and (max-width:320px){
+    footer {
+            margin: 0 auto;
+            padding: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            column-gap: 45px;
+    }
+}
+@media only screen and (max-width:375px){
+    footer {
+            margin: 0 auto;
+            padding: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 45px;
     }
 }
