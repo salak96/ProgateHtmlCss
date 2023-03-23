@@ -306,7 +306,7 @@ input {
 }
 
 input[type="text"] {
-    width: 500px;
+    width: 400px;
     justify-content: center;
     align-items: center;
 }
@@ -400,6 +400,14 @@ h3{
     
     }
   }
+    @media screen and (max-width: 600px) {
+        header li {
+            display: flex;
+            font-size: 10px;
+            font-family: sans-serif;
+            column-gap: 1px;
+        }
+    }
 @media (min-width: 768px) {
     footer {
         margin: 0 auto;
@@ -440,7 +448,7 @@ h3{
 }
 @media (min-width: 602px) {
    textarea {
-       width: 300px;
+       width: 500px;
        justify-content: center;
        align-items: center;
    }
@@ -464,7 +472,7 @@ h3{
   /* # Mobile */
 @media only screen and (min-width: 480px){
     input[type="text"] {
-        width: 100px;
+        width: 500px;
         justify-content: center;
         align-items: center;
     }
@@ -473,7 +481,7 @@ h3{
 # Tablet */
 @media only screen and (min-width: 768px) {
     input[type="text"] {
-        width: 300px;
+        width: 500px;
         justify-content: center;
         align-items: center;
     }
@@ -482,6 +490,29 @@ h3{
 @media only screen and (min-width: 992px){
     input[type="text"] {
         width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    input[type="text"] {
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* mobile */
+@media only screen and (max-width: 600px) {
+   textarea {
+       width: 200px;
+       justify-content: center;
+       align-items: center;
+   }
+}
+@media only screen and (max-width: 600px) {
+    input[type="text"] {
+        width: 200px;
         justify-content: center;
         align-items: center;
     }
