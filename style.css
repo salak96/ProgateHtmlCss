@@ -218,12 +218,13 @@ main section {
 }
 
 main section h1 {
-    transform: translateY(40px);
+    transform: translateY(50px);
     text-transform: uppercase;
     font-size: 50px;
     font-weight: bold;
     font-family: sans-serif;
     color: #808080;
+    white-space: nowrap;
 }
 
 main section h2 {
@@ -273,8 +274,8 @@ article p{
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding: 0;
-    column-gap: 20px;
+
+    column-gap: 40px;
 }
 h1 {
     font-family: sans-serif;
@@ -287,6 +288,7 @@ h1 {
     font-family: sans-serif;
     color: #7f8485;
     letter-spacing: 1px;   
+    white-space: nowrap;
 }
 .saya {
     display: inline-block;
