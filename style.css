@@ -145,9 +145,8 @@ header {
     background-color: #808080;
     color: white;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 header h5{
@@ -425,11 +424,46 @@ h3{
     header {
         display: flex;
         justify-content: center;
-        align-items: center;
         column-gap: 1px;
         font-size: 1px;
     }
+    @media (min-width: 1250px) {
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1px;
+            font-size: 1px;
+        }
+    }
 }
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        align-items: center;
+        column-gap: 1px;
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 1px;
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    header h5 {
+        display: flex;
+        font-size: 10px;
+        font-family: sans-serif;
+        column-gap: 1px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    header ul {
+        display: flex;
+        font-size: 10px;
+        font-family: sans-serif;
+    
+    }
+  }
 @media (min-width: 768px) {
     footer {
         padding: 20px;
