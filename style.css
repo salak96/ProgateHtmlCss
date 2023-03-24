@@ -199,8 +199,7 @@ figure img {
     object-fit: cover;
     object-position: center;
     margin: 0 auto;
-    padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 article h1 {
@@ -215,6 +214,7 @@ article p{
     white-space:wrap;
     padding-right: 20px;
     padding-left: 20px;
+    font-family: sans-serif;
 }
 
 .article2{
@@ -422,6 +422,7 @@ h3{
             column-gap: 1px;
         }
     }
+    /* footer */
 @media (max-width: 428px) {
     footer {
         margin: 0 auto;
@@ -431,8 +432,28 @@ h3{
         column-gap: 40px;
     }
 }
+@media (max-width: 393px) {
+    footer {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        column-gap: 40px;
+    }
+}
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    footer  {
+        margin: 0 auto;
+        padding: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        align-items: right;
+        column-gap: 100px;
+    }
+}
+@media (max-width: 834px) {
     footer  {
         margin: 0 auto;
         padding: 0 auto;
@@ -451,10 +472,10 @@ h3{
         justify-content: space-between;
         white-space: nowrap;
         align-items: right;
-        column-gap: 1100px;
+        column-gap: 1704px;
     }
 }
-
+/* gambar */
 @media (max-width: 1080px) {
     .gambar{
         display:flex;
@@ -544,22 +565,54 @@ h3{
         align-items: center;
     }
 }
-@media only screen and (max-width:320px){
+
+@media only screen and (max-width: 600px) {
     footer {
             margin: 0 auto;
             padding: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: right;
-            column-gap: 45px;
+            column-gap: 80px;
     }
 }
-@media only screen and (max-width:375px){
+@media only screen and (max-width:428px) {
     footer {
             margin: 0 auto;
             padding: 0 auto;
             display: flex;
             justify-content: space-between;
-            column-gap: 45px;
+            align-items: right;
+            column-gap: 80px;
+    }
+}
+@media only screen and (max-width:673px) {
+    footer {
+            margin: 0 auto;
+            padding: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            column-gap: 80px;
+    }
+}
+@media only screen and (max-width:320px) {
+    footer {
+            margin: 0 auto;
+            padding: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            column-gap: 40px;
+    }
+}
+@media only screen and (max-width:428px) {
+    footer {
+            margin: 0 auto;
+            padding: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            column-gap: 90px;
     }
 }
