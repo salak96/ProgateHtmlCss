@@ -368,9 +368,18 @@ h3{
         color: black;
         padding: 20px;
         padding-bottom: 50px;
+        background-color: #32b7a9;
+}
+.FAQ h3{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 button.acordion{
-    background-color: #d9d7d7;
+    background-color: #596fff;
     color: black;
     cursor: pointer;
     padding: 18px;
@@ -387,7 +396,7 @@ button.acordion{
     align-items: flex-start;
     position: relative;
     margin-left: 150px;
-    background-color: #CCD6DB;
+    background-color: #596fff
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -396,6 +405,8 @@ button.acordion{
     border: none;
     outline: none;
     transition: 0.4s;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -416,10 +427,13 @@ button.acordion{
     overflow: hidden;
     width: 80%;
     font-size: 20px;
-    padding: 38px; 
-    letter-spacing: 1px;
+    padding: 20px; 
+    letter-spacing: 3px;
     color: #7f8485;
     white-space:normal;
+    margin-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+
   }
   .panel {
     background-color: white;
@@ -502,9 +516,9 @@ button.acordion{
         color: black;
         padding: 20px;
         padding-bottom: 50px;
+        background-color: #32b7a9;
     }
     button.acordion{
-        background-color: #d9d7d7;
         color: black;
         cursor: pointer;
         padding: 18px;
@@ -521,27 +535,30 @@ button.acordion{
         align-items: flex-start;
         position: relative;
         margin-left: 2px;
-        background-color: #CCD6DB;
         color: #444;
         cursor: pointer;
         padding: 18px;
         width: 100%;
         text-align: left;
-        border: none;
+        border-radius: 10px 10px 0 0;
         outline: none;
         transition: 0.4s;
+        margin-bottom: 4px;
       }
       .panel {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 0px;
-        padding:20px;
+        line-spacing: 1px;
+        margin-left: 1px;
+        padding:10px;
         background-color: white;
         display: none;
         overflow: hidden;
         width: 100%;
+        border-radius: 0 0 10px 10px;
+        font-size: 20px;
       }
       .panel {
         padding: 0 18px;
