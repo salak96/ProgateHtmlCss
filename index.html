@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Ini adalah Frontend Developer Course">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="img/ninja.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <H5>NINJA KEN</H5>
@@ -75,6 +77,23 @@
         </div>
         <button>Kirim</button>
     </nav>
+    <div class="FAQ">
+        <h3>Frequently Asked Questions</h3><br><br>
+        <div class="section">
+            <button class="accordion">Bagaimana saya dapat menghubungi Anda?</button>
+            <div class="panel">
+                <p>Anda dapat menghubungi kami melalui formulir kontak yang tersedia di halaman "Contact Us", melalui email, atau melalui media sosial kami.</p>
+            </div>
+            <button class="accordion">Berapa lama waktu yang dibutuhkan untuk mendapatkan respons dari Anda?</button>
+            <div class="panel">
+                <p>Kami berusaha untuk merespons semua pesan dalam waktu 24 jam setelah kami menerima pesan Anda. Namun, waktu respons kami tergantung pada volume pesan yang kami terima.</p>
+            </div>
+            <button class="accordion">Apakah Anda menerima permintaan kerjasama atau partnership?</button>
+            <div class="panel">
+                <p>Ya, kami menerima permintaan kerjasama atau partnership. Silakan hubungi kami melalui formulir kontak atau email kami untuk informasi lebih lanjut.</p>
+            </div>
+        </div>
+    </div>
     <footer>
         <h5>NINJA KEN</h5>
         <ul>
@@ -84,5 +103,36 @@
         </ul>
     </footer>
 </body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 </html>
