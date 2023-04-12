@@ -68,14 +68,14 @@
         </div>
     </article>
     <nav class="saya">
-        <h3>Hubungi Saya</h3><br>
-        <div class="text">
-            <input type="text" placeholder="Email(Diperlukan)"><br>
-            <form>
-                <textarea name="Message" rows="2" cols="48" placeholder="Message(Diperlukan)"></textarea>
-            </form><br>
-        </div>
-        <button>Kirim</button>
+        <form name="contact" onsubmit="return validateForm()">
+            <h3>Hubungi Saya</h3><br>
+            <div class="text">
+                <input type="text" name="email" placeholder="Email(Diperlukan)" ><br>
+                <textarea name="message" rows="2" cols="48" placeholder="Message(Diperlukan)" ></textarea>
+            </div><br><br>
+            <button type="submit">Kirim</button>
+        </form>
     </nav>
     <div class="FAQ">
         <h3>Frequently Asked Questions</h3><br><br>
@@ -104,6 +104,16 @@
     </footer>
 </body>
 <script>
+    // function validate
+    function validateForm(){
+        var x = document.forms["contact"]["email"].value;
+        var y = document.forms["contact"]["message"].value;
+        if (x === "" || y === "") {
+            alert("Email dan Message harus diisi");
+            return false;
+        }
+    }
+
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -134,5 +144,4 @@
         });
     }
 </script>
-
 </html>
