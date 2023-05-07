@@ -229,6 +229,7 @@ article p{
     width:auto;
     margin: 0 auto;
     column-gap: 10px;
+    width: 100%;
 }
 h1 {
     font-family: sans-serif;
@@ -407,6 +408,7 @@ button.acordion{
     transition: 0.4s;
     margin-bottom: 10px;
     letter-spacing: 1px;
+    border-radius: 0 0 10px 10px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -540,7 +542,7 @@ button.acordion{
         padding: 18px;
         width: 100%;
         text-align: left;
-        border-radius: 10px 10px 0 0;
+        border-radius:  10px 0 0;
         outline: none;
         transition: 0.4s;
         margin-bottom: 4px;
@@ -550,7 +552,7 @@ button.acordion{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        line-spacing: 1px;
+        line-spacing: 0.1em;;
         margin-left: 1px;
         padding:10px;
         background-color: white;
