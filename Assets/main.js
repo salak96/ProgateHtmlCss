@@ -83,6 +83,9 @@ function validateForm(){
      alert("Email dan Message harus diisi");
      return false;
  }
+ else{
+        alert("Terima kasih sudah menghubungi kami");
+ }
 }
 
 var acc = document.getElementsByClassName("accordion");
