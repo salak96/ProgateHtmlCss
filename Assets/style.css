@@ -21,6 +21,87 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+     max-width: 1200px;
+     position: relative;
+}
+.wrapper i{
+  position: absolute;
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color:#eb4034;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #eb4034;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #0dd614;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
 html {
     height: 100%;
     margin-left: auto;
@@ -225,8 +306,8 @@ article p{
 }
 .gambar{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width:auto;
     margin: 0 auto;
     column-gap: 10px;
     width: 100%;

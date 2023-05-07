@@ -49,42 +49,19 @@
         <div class="judul">
             <h1>Proyek Contoh</h1><br>
         </div>
-        <div class="gambar">
-            <button class="w3-button w3-black w3-display-left" onclick="updateSlide(-1)">&#10094;</button>
-            <figure>
-                <img class="mySlides" src="Assets/img/1.png " alt="gambar1">
-                <br>
-                <figcaption>Image 1</figcaption>
-            </figure>
-            <figure>
-                <img class="mySlides" src="Assets/img/2.png" alt="gambar2">
-                <br>
-                <figcaption>Image 2</figcaption>
-            </figure>
-            <figure>
-                <img class="mySlides" src="Assets/img/3.png" alt="gambar2">
-                <br>
-                <figcaption>Image 3</figcaption>
-            </figure>
-            <figure>
-                <img class="mySlides" src="https://1.bp.blogspot.com/-dQvHyEgdoFU/WC6FXNz1RYI/AAAAAAAABFw/9S-xXh8mbIUJ_M20YfdDYK8OSI7qrh_TwCLcB/s1600/HTML5.jpg" alt="html" 
-                width="20%" height="20%">
-                <br>
-                <figcaption>HTML5</figcaption>
-            </figure>
-            <figure>
-                <img class="mySlides" src="https://it.telkomuniversity.ac.id/bemucil/2023/01/CSS-adalah-dikompresi-scaled.jpg" width="20%" height="20%"alt="css">
-                <br>
-                <figcaption>Image 5</figcaption>
-            </figure>
-            <figure>
-                <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"  width="20%" height="20%"   alt="gambar2">
-                <br>
-                <figcaption>Image 6</figcaption>
-            </figure>
-            <br><br>
-                <button class="w3-button w3-black w3-display-right" onclick="updateSlide(1)">&#10095;</button>
-        </div>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="Assets/img/1.png" alt="img" draggable="false">
+              <img src="Assets/img/2.png" alt="img" draggable="false">
+              <img src="Assets/img/3.png" alt="img" draggable="false">
+              <img src="Assets/img/4.png" alt="img" draggable="false">
+              <img src="Assets/img/5.png" alt="img" draggable="false">
+              <img src="Assets/img/6.png" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+          
     </article>
     <nav class="saya">
         <form name="contact" onsubmit="return validateForm()">
