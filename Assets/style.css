@@ -917,7 +917,7 @@ button.acordion{
   /* Close Button */
   .close {
     margin-top: 150px;
-    margin-right: 650px;
+    margin-right:150px;
     display:flex;
     justify-content:flex-end;
     position: absolute;
