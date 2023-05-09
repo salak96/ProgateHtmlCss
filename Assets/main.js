@@ -139,6 +139,11 @@ function showModal(val) {
       modal.style.display = "none";
       
     }
-    console.log(val.src);
+    //ketika klik diluar modal maka d close
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
   }
   
