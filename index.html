@@ -52,20 +52,35 @@
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
             <div class="carousel">
-                <div id="myModal">
+                <div id="my">
                     <div id="img" class="img">
-                        <img src="Assets/img/1.png" alt="hijau" draggable="false">
-                        <img src="Assets/img/2.png" alt="biru" draggable="false">
-                        <img src="Assets/img/3.png" alt="ungu" draggable="false">
-                        <img src="Assets/img/4.jpeg" alt="html" draggable="false">
-                        <img src="Assets/img/5.png" alt="css" draggable="false">
+                        <img src="Assets/img/1.png" alt="hijau" draggable="false" onclick="showModal()">
+                        <img src="Assets/img/2.png" alt="biru" draggable="false" onclick="showModal()">
+                        <img src="Assets/img/3.png" alt="ungu" draggable="false" onclick="showModal()">
+                        <img src="Assets/img/4.jpeg" alt="html" draggable="false" onclick="showModal()">
+                        <img src="Assets/img/5.png" alt="css" draggable="false" onclick="showModal()">
                         <img src="Assets/img/6.png" alt="JavaScript" draggable="false">
                     </div>
                 </div>
             </div>
             <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
-    </article>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+</article>
     <nav class="saya">
         <form name="contact" onsubmit="return validateForm()">
             <h3>Hubungi Saya</h3><br>
