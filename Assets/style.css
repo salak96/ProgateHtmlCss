@@ -916,6 +916,8 @@ button.acordion{
   
   /* Close Button */
   .close {
+    display:flex;
+    justify-content:flex-end;
     position: absolute;
     top: 15px;
     right: 35px;
@@ -927,8 +929,9 @@ button.acordion{
   
   .close:hover,
   .close:focus {
-    color: #bbb;
+    color: white;
     text-decoration: none;
     cursor: pointer;
+    
   }
   
