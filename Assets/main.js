@@ -119,7 +119,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 //modal
-function showModal() {
+function showModal(val) {
     // Get the modal
     var modal = document.getElementById("myModal");
   
@@ -128,8 +128,8 @@ function showModal() {
     var modalImg = document.getElementById("modalImg");
     var captionText = document.getElementById("caption");
     modal.style.display = "block";
-    modalImg.src = img.src;
-    captionText.innerHTML = img.alt;
+    modalImg.src = val.src;
+    captionText.innerHTML = val.alt;
   
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -137,7 +137,8 @@ function showModal() {
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
+      
     }
-    console.log(showModal);
+    console.log(val.src);
   }
   

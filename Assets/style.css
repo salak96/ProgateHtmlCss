@@ -877,11 +877,14 @@ button.acordion{
   
   /* Modal Content */
   .modal-content {
-    margin: auto;
+    margin:0 auto;
+    margin-top: 250px;
+    padding: 50px;
     display: block;
     width: 80%;
     max-width: 700px;
     height: auto;
+    background-color: transparent;
   }
   
   /* Caption of Modal Image */
@@ -898,6 +901,10 @@ button.acordion{
   
   /* Add Animation */
   .modal-content, #caption {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
     animation-name: zoom;
     animation-duration: 0.6s;
   }
